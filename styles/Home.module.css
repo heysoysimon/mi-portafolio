@@ -69,31 +69,41 @@ overflow: hidden;
 
 /* main */
 
-.bio{
-  width: 100%;
-  padding: 30px;
-  background:#f0efeb;
-}
-.textoImagen{
-  width: 100%;
-}
-.img{
-  width: 40%;
-  margin: 5px;
-  /* float: left;
-  vertical-align: middle; */
-  border-radius: 66% 34% 70% 30% / 30% 61% 39% 70%;
- }
-.bioTexto p{
-  display: inline-block;
-  vertical-align: middle;
-}
 .bioTexto{
   padding: 20px;
-  background: #f0efeb;
   overflow: hidden;
+  display: flex;
  text-align: justify;
- align-items: center;
 }
+
+.bio{
+  padding: 30px;
+}
+.imagen{
+  flex-shrink: 0;
+}
+.img{
+  width: 100%;
+  margin: 5px;
+  border-radius: 66% 34% 70% 30% / 30% 61% 39% 70%;
+ }
+
+ .sobreMi{
+  margin-top: 20px;
+ }
+
+ .link{
+  padding: 10px; 
+     background: #333;
+     color: #f0efeb;
+     text-decoration: none;
+     transition: 0.5s ease-in-out;
+ }
+
+ .link:hover{
+  color: #333;
+  background: #f0efeb;
+  transition: 0.5s ease-in-out;
+ }
  
 

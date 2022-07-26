@@ -1,16 +1,22 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
-/* import imagenYo from '../public/imagenYo.JPG'
- */export default function Home() {
+import Link from 'next/link'
+import Yo from '../public/imagenYo.JPG'
+
+export default function Home() {
   return (
     <div className={styles.container}>
 
 <header className={styles.header}>
           <nav className={styles.nav}>
+              <Link href="/sobreMi">
+              <a> Sobre mi</a>
+              </Link>
+              <a href='#'> Proyectos</a>
               <a href='#'> Sobre mi</a>
-              <a href='#'> Sobre mi</a>
-              <a href='#'> Sobre mi</a>
-              <a href='#'> Sobre mi</a>
+              <Link href="/contacto">
+                <a> Contacto</a>
+              </Link>
           </nav>
 
         <div className={styles.textosHeader}>
@@ -38,24 +44,45 @@ import Image from 'next/image'
           </path></svg></div>
         </div>
       </header>
-
-      <main>
-           <section className={styles.bio}>
-              <div className={styles.contenedor}>
-                  <div className={styles.bioTexto}>
-                  {/* <Image
+   {/* <Image
                     className={styles.img} 
                     width={400} 
                     height={700} 
                     src="/imagenYo.JPG" /> */}
-                    <img src={'../public/imagenYo.JPG'}/>
-                    <h2> Sobre mi</h2>
-                  <p>Soy un joven que desde pequeño, sentí la vocación de armar y formas estructuras
-                      con distintos materiales y/o objectos. ya en mi adolescencia  descubrí en las computadoras una gran gama de posibilidades creativas para el desarrollo de ideas, conceptos  
-                      y aplicación en distintos ámbitos.</p>
-                  </div>
-                </div>
-           </section>
+      <main>
+              <section className={styles.bio}>
+                    <div className={styles.contenedor}>
+                  <div className={styles.bioTexto}>
+
+                          <div className={styles.imagen}>
+                          <Image
+                            className={styles.img}
+                            alt='Simon Rondon' 
+                            width={400} 
+                            height={700}
+                            float = 'left' 
+                            src="/imagenYo.JPG" />
+                          </div>
+
+                        <div>
+                      <h2> Sobre mi</h2>
+
+                    <p>Soy un joven que desde pequeño, sentí la vocación de armar y formas estructuras
+                        con distintos materiales y/o objectos. ya en mi adolescencia  descubrí en las 
+                        computadoras una gran gama de posibilidades creativas para el desarrollo de ideas, conceptos  
+                        y aplicación en distintos ámbitos.
+                    </p>
+
+                    <div className={styles.sobreMi}>
+                  <Link className={styles.link} href="/sobreMi">
+                  <a> Sobre mi</a>
+                  </Link>
+                    </div>
+                        </div>
+
+                        </div>
+                    </div>
+              </section>
       </main>
     </div>
   )
