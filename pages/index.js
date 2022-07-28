@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import Yo from '../public/imagenYo.JPG'
+
 
 export default function Home() {
   return (
@@ -73,8 +73,8 @@ export default function Home() {
                         y aplicación en distintos ámbitos.
                     </p>
 
-                    <div className={styles.sobreMi}>
-                  <Link className={styles.link} href="/sobreMi">
+                    <div className={styles.verMas}>
+                  <Link href="/sobreMi">
                   <a> Sobre mi</a>
                   </Link>
                     </div>
@@ -83,6 +83,55 @@ export default function Home() {
                         </div>
                     </div>
               </section>
+
+              <div className={styles.contenedor}>
+              <div className={styles.tecnologias}>
+                    <h2> Tecnologias que manejo </h2>
+                    
+                    <div className={styles.tecno}>
+                        <Image 
+                          alt=''
+                          width="200"
+                          height="200"
+                          src="/html.svg"
+                        />
+                    </div>
+
+                    <div className={styles.tecno}>
+                        <Image 
+                          alt=''
+                          width="200"
+                          height="200"
+                          src="/css.svg"
+                        />
+                    </div>
+
+                    <div className={styles.tecno}>
+                        <Image 
+                          alt=''
+                          width="200"
+                          height="200"
+                          src="/javascript.svg"
+                        />
+                    </div>
+                    <div className={styles.tecno}>
+                        <Image 
+                          alt=''
+                          width="200"
+                          height="200"
+                          src="/react.svg"
+                        />
+                    </div>
+                    <div className={styles.tecno}>
+                        <Image 
+                          alt=''
+                          width="200"
+                          height="200"
+                          src="/git.svg"
+                        />
+                    </div>
+              </div>
+              </div>
       </main>
     </div>
   )

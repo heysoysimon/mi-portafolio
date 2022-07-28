@@ -107,3 +107,34 @@ overflow: hidden;
  }
  
 
+ .verMas{
+  margin-top: 20px;
+}
+.verMas a{
+  padding: 10px; 
+  background: #333;
+  color: #f0efeb;
+  text-decoration: none;
+  transition: 0.5s ease-in-out;
+}
+
+.verMas a:hover{
+  color: #333;
+  background: #f0efeb;
+  transition: 0.5s ease-in-out;
+}
+
+/* tecnologias  */
+
+.tecnologias{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tecno{
+  padding: 20px;
+}
+
+
+
