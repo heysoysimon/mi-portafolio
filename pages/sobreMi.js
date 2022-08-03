@@ -1,9 +1,12 @@
 import Link from "next/link"
 import Image from "next/image"
 import styles from "../styles/Sobremi.module.css"
+import Layout from "../components/Layout"
 const SobreMi = () => {
   return (
-    <div>
+    <Layout
+    pagina = "Sobre Mi"
+    >
 
         <div className={styles.biografia}>
             <div className={styles.ImagenBio}>
@@ -27,12 +30,9 @@ const SobreMi = () => {
                 ullamcorper velit ac, blandit ultrices nibh. Nunc mollis turpis ut lacinia mattis. Duis placerat ligula lacus, eu porttitor leo blandit tristique. Nullam eu pretium augue. Nam in eleifend turpis, ac tristique est.
 
                 </p>
-                <Link href="/">
-            <a> volver</a>
-        </Link>
             </div>
         </div>
-    </div>
+    </Layout>
   )
 }
 

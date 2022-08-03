@@ -1,0 +1,42 @@
+.iconos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.icono{
+    display: flex;
+}
+
+.icono svg{
+    width: 30px;
+    margin: 5px;
+    fill: #333;
+    transition: transform .3s ease-out;
+}
+.icono svg :hover{
+    transform: translate(0, -5px);
+    fill: #e63946;
+}
+.textos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto{
+    display: flex;
+    margin: 10px;
+}
+
+.nav a{
+    font-weight: 300;
+    padding: 10px;
+    font-size: 20px;
+}
+.nav a:hover{
+    color: #e63946;
+    text-decoration: underline;
+  }

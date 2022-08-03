@@ -8,6 +8,7 @@ width: 90%;
 max-width: 1000px;
 margin: auto;
 overflow: hidden;
+text-align: center;
 }
 .header{
   width: 100%;
@@ -20,25 +21,6 @@ overflow: hidden;
   position: relative;
 }
 
-.nav{
-  text-align: right;
-  padding: 30px 50px 0 0;
-  width: 100%;
-  height: 8vh;
-}
-
-.nav a{
-  color: #fff;
-  font-weight: 300;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.nav a:hover{
-  color: #fff;
-  font-weight: 300;
-  text-decoration: underline;
-}
 
 .textosHeader{
   display: flex;
@@ -123,18 +105,3 @@ overflow: hidden;
   background: #f0efeb;
   transition: 0.5s ease-in-out;
 }
-
-/* tecnologias  */
-
-.tecnologias{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.tecno{
-  padding: 20px;
-}
-
-
-

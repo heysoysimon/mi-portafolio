@@ -1,0 +1,34 @@
+.contenedorPrpyectos{
+
+}
+
+.proyectos{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.proyecto{
+  padding: 20px;
+  width: 50%;
+  border: 1px #333;
+  text-align: justify;
+}
+
+.proyecto h3{
+  font-size: 20px;
+}
+
+
+.proyecto a{
+  font-size: 20px;
+  color: #3a86ff;
+
+}
+
+.proyecto a :hover{
+  color: #00296b;
+
+}
+.infoProyecto{
+
+}

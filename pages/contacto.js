@@ -1,9 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from '../styles/Contacto.module.css'
+import Layout from '../components/Layout'
 const Contacto = () => {
   return (
-   <div>
+   <Layout>
       <h1 className={styles.titulo}> Contacto</h1>
     <div className={styles.contenedor}>
       <form className={styles.formulario}>
@@ -19,10 +20,7 @@ const Contacto = () => {
            value="enviar"/>
       </form>
     </div>
-<Link href="/">
-    <a>Home</a>
-  </Link>
-   </div>
+   </Layout>
   )
 }
 

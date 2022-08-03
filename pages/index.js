@@ -1,24 +1,17 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Proyectos from '../components/Proyectos'
+import Tecnologias from '../components/Tecnologias'
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
     <div className={styles.container}>
-
+<Layout 
+pagina="inicio"
+>
 <header className={styles.header}>
-          <nav className={styles.nav}>
-              <Link href="/sobreMi">
-              <a> Sobre mi</a>
-              </Link>
-              <a href='#'> Proyectos</a>
-              <a href='#'> Sobre mi</a>
-              <Link href="/contacto">
-                <a> Contacto</a>
-              </Link>
-          </nav>
-
         <div className={styles.textosHeader}>
             <h1> mi nombre</h1>
             <h2> desarollador</h2>
@@ -44,12 +37,6 @@ export default function Home() {
           </path></svg></div>
         </div>
       </header>
-   {/* <Image
-                    className={styles.img} 
-                    width={400} 
-                    height={700} 
-                    src="/imagenYo.JPG" /> */}
-      <main>
               <section className={styles.bio}>
                     <div className={styles.contenedor}>
                   <div className={styles.bioTexto}>
@@ -85,54 +72,12 @@ export default function Home() {
               </section>
 
               <div className={styles.contenedor}>
-              <div className={styles.tecnologias}>
-                    <h2> Tecnologias que manejo </h2>
-                    
-                    <div className={styles.tecno}>
-                        <Image 
-                          alt=''
-                          width="200"
-                          height="200"
-                          src="/html.svg"
-                        />
-                    </div>
-
-                    <div className={styles.tecno}>
-                        <Image 
-                          alt=''
-                          width="200"
-                          height="200"
-                          src="/css.svg"
-                        />
-                    </div>
-
-                    <div className={styles.tecno}>
-                        <Image 
-                          alt=''
-                          width="200"
-                          height="200"
-                          src="/javascript.svg"
-                        />
-                    </div>
-                    <div className={styles.tecno}>
-                        <Image 
-                          alt=''
-                          width="200"
-                          height="200"
-                          src="/react.svg"
-                        />
-                    </div>
-                    <div className={styles.tecno}>
-                        <Image 
-                          alt=''
-                          width="200"
-                          height="200"
-                          src="/git.svg"
-                        />
-                    </div>
+              <h2> Tecnologias que manejo </h2>
+                    <Tecnologias></Tecnologias>
+                    <Proyectos/>
               </div>
-              </div>
-      </main>
+</Layout>
+
     </div>
   )
 }
