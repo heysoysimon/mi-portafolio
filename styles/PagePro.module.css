@@ -1,6 +1,3 @@
-.contenedorPrpyectos{
-
-}
 
 .proyectos{
   display: flex;
@@ -20,17 +17,14 @@
 
 
 .proyecto a{
-  font-size: 20px;
-  margin: 20px;
-  cursor: pointer;
-  color: #3a86ff;
-
-}
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    color: #3a86ff;
+  
+  }
 
 .proyecto a :hover{
   color: #00296b;
-
-}
-.infoProyecto{
 
 }

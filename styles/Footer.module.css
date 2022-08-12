@@ -10,13 +10,14 @@
     display: flex;
 }
 
-.icono svg{
+.icono a{
     width: 30px;
     margin: 5px;
+    font-size: 30px;
     fill: #333;
     transition: transform .3s ease-out;
 }
-.icono svg :hover{
+.icono a :hover{
     transform: translate(0, -5px);
     fill: #e63946;
 }

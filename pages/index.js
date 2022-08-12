@@ -1,6 +1,5 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
-import Link from 'next/link'
 import Proyectos from '../components/Proyectos'
 import Tecnologias from '../components/Tecnologias'
 import Layout from '../components/Layout'
@@ -12,6 +11,7 @@ export default function Home() {
 pagina="inicio"
 >
 <header className={styles.header}>
+  
         <div className={styles.textosHeader}>
             <h1> mi nombre</h1>
             <h2> desarollador</h2>
@@ -59,12 +59,6 @@ pagina="inicio"
                         computadoras una gran gama de posibilidades creativas para el desarrollo de ideas, conceptos  
                         y aplicación en distintos ámbitos.
                     </p>
-
-                    <div className={styles.verMas}>
-                  <Link href="/sobreMi">
-                  <a> Sobre mi</a>
-                  </Link>
-                    </div>
                         </div>
 
                         </div>
