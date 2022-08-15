@@ -7,7 +7,9 @@ import Link from 'next/link'
 
 const Proyectos = () => {
   return (
-    <Layout>
+    <Layout
+    pagina= "Proyectos"
+    >
     <div className="contenedor">
     <div className={styles.proyectos}>
     {proyectos.map(({nombre, descricion, image, urlDemo, urlCode}, i)=>(

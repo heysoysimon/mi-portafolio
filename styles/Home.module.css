@@ -64,7 +64,6 @@ text-align: center;
   flex-shrink: 0;
 }
 .img{
-  width: 100%;
   margin: 5px;
   border-radius: 66% 34% 70% 30% / 30% 61% 39% 70%;
  }
@@ -72,35 +71,15 @@ text-align: center;
  .sobreMi{
   margin-top: 20px;
  }
+ @media only  screen and (max-width: 768px) {
+  .bioTexto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
- .link{
-  padding: 10px; 
-     background: #333;
-     color: #f0efeb;
-     text-decoration: none;
-     transition: 0.5s ease-in-out;
- }
-
- .link:hover{
-  color: #333;
-  background: #f0efeb;
-  transition: 0.5s ease-in-out;
- }
- 
-
- .verMas{
-  margin-top: 20px;
-}
-.verMas a{
-  padding: 10px; 
-  background: #333;
-  color: #f0efeb;
-  text-decoration: none;
-  transition: 0.5s ease-in-out;
+  .imagen{
+    width: 95%;
+  }
 }
 
-.verMas a:hover{
-  color: #333;
-  background: #f0efeb;
-  transition: 0.5s ease-in-out;
-}

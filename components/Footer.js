@@ -36,7 +36,7 @@ const Footer = () => {
             <div className={styles.textos}>
                 <div className={styles.texto}>
                     {/* textos */}
-                    <div> ©2022</div>
+                    <div> {`© ${new Date().getFullYear()}`}</div>
                     <div> • </div>
                     <div> Simon Rondon</div>
                 </div>

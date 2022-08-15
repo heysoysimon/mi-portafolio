@@ -8,13 +8,13 @@ export default function Home() {
   return (
     <div className={styles.container}>
 <Layout 
-pagina="inicio"
+pagina="Inicio"
 >
 <header className={styles.header}>
   
         <div className={styles.textosHeader}>
-            <h1> mi nombre</h1>
-            <h2> desarollador</h2>
+            <h1> Simón Rondón</h1>
+            <h2> Desarollador Front End</h2>
         </div>
 
         <div className={styles.wave}>
