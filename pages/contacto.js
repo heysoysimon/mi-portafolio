@@ -2,9 +2,16 @@ import Spinner from '../components/Spinner'
 import styles from '../styles/Contacto.module.css'
 import Layout from '../components/Layout'
 import { useState } from 'react'
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contacto = () => {
 
+  const form = useRef();
+
   const [alerta, setAlerta] = useState('')
+  const [mensaje, setMensaje] = useState('')
   const [cargando, SetCargando] = useState(false)
   const [ valor, setValues] = useState({
     nombre: "",
@@ -15,6 +22,7 @@ const Contacto = () => {
  /*  const initialFomr= [
     nombre:""
    ] */
+
  function enviarCorreo(e){
   e.preventDefault();
   if(Object.values(valor).includes('')){
@@ -23,12 +31,25 @@ const Contacto = () => {
     setAlerta("todos los campos son obligatorios ")
     return
   } else{
-    console.log("enviando...")
-    setAlerta('')
     SetCargando(true)
-    setTimeout(() =>{
+    setAlerta('')
+    /* envia el correo */
+    emailjs.sendForm('service_9lcoksl', 'template_vs1s67i', 
+    e.target, '1OO4GvnXd5-hUClpr').then((result) => {
+
+      console.log(result.text);
       SetCargando(false)
-    }, 5000)
+      setMensaje('su mensaje se envio correctamente ')
+  }, (error) => {
+
+      console.log(error.text);
+
+      setAlerta('Ocurrio un error :( ')
+  });
+
+   setTimeout(() =>{
+      setMensaje('')
+    }, 5000) 
   }
  } 
 
@@ -55,7 +76,7 @@ const Contacto = () => {
       <h1 className={styles.titulo}> Hablemos! </h1>
     <div className={styles.contenedor}>
 
-    <form onSubmit={enviarCorreo}
+    <form ref={form} onSubmit={enviarCorreo}
       className={styles.formulario}>
         <label htmlFor='text'/>
           <input className={styles.mensaje} 
@@ -95,7 +116,8 @@ const Contacto = () => {
            type="submit" 
            value="enviar"/>
       </form>
-      {alerta ? <div className={styles.error}>{alerta}</div> 
+      {alerta ? <div className={styles.error}>{alerta}</div> : 
+      mensaje ? <div className={styles.enviado}>{mensaje}</div>
       : cargando  ? <Spinner/>  : ''}
     </div>
   
