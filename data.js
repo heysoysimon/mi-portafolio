@@ -16,7 +16,7 @@ export const proyectos = [
         urlCode:"https://github.com/heysoysimon/AppClima-StyledComponets"
     },
     {
-        nombre: "Busacor De Letras",
+        nombre: "Buscador De Letras",
         descricion:
         "Buscador De Letras estelizado con CSS heho con ReactJS y la api de api lyrics ",
         image: "BuscadorLetras.png",
