@@ -18,7 +18,9 @@
   font-size: 20px;
 }
 
-
+.img{
+  background: #333;
+}
 .proyecto a{
   font-size: 20px;
   margin: 20px;

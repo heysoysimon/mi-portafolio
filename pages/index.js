@@ -48,7 +48,7 @@ pagina="Inicio"
                             width={400} 
                             height={700}
                             float = 'left' 
-                            src="/imagenYo.JPG" />
+                            src="/min.JPG" />
                           </div>
 
                         <div>
