@@ -23,5 +23,13 @@ export const proyectos = [
         urlDemo:"https://buscador-de-letras-six.vercel.app/",
         urlCode:"https://github.com/heysoysimon/Buscador-De--Letras"
     },
+    {
+        nombre: "Rastreador De Direciones ip",
+        descricion:
+        "Rastreador De Direciones ip hecho con Leflet Reactjs y talwindCSS ",
+        image: "mapaIP.png",
+        urlDemo:"https://rastreador-ip.vercel.app/",
+        urlCode:"https://github.com/heysoysimon/Rastreador-IP"
+    },
 
 ]
