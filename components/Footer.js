@@ -15,19 +15,19 @@ const Footer = () => {
             <div className={styles.iconos}>
                   {/* iconos */}
                 <div className={styles.icono}>
-                    <a href='#'>
+                    <a href='https://github.com/heysoysimon' target="blacnk">
                       <FaGithub/>
                      </a>
 
-                    <a href="#">
+                    <a href="https://twitter.com/simon56963872" target="blacnk">
                     <FaTwitter/>
                     </a>
 
-                    <a href="#">
+                    <a href="https://www.instagram.com/heysoysimon/" target="blacnk">
                       <FaInstagram/>
                     </a>
 
-                    <a href="#">
+                    <a href="https://www.linkedin.com/in/sim%C3%B3n-rond%C3%B3n-mart%C3%ADnez-6b8a64233/" target="blacnk">
                       <FaLinkedin/>
                     </a>
                     
